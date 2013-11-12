@@ -29,7 +29,7 @@ Enemy::Enemy(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,std::str
     this->iteration=0;
 
     this->score_upload_message="";
-    bool flag_begin_upload=false;
+//    bool flag_begin_upload=false;
 
     loadFromXML();
 

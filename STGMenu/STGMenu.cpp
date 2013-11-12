@@ -62,15 +62,15 @@ void Menu::iniciarJuego(std::string character_name,std::string stage_name)
 
 void Menu::loopMenu()
 {
-    bool tecla_arriba=false;
+//    bool tecla_arriba=false;
 
     llenarRosalilaInputssBotones();
     inputa=new RosalilaInputs();
     inputb=new RosalilaInputs();
     inputa->loadFromXML(1,receiver);
     inputb->loadFromXML(2,receiver);
-    bool tecla_arriba_p1=true;
-    bool tecla_arriba_p2=true;
+//    bool tecla_arriba_p1=true;
+//    bool tecla_arriba_p2=true;
     //inicio
 	for (;;)
 	{
@@ -105,7 +105,7 @@ void Menu::loopMenu()
 
         if(selectables_container!=NULL)
         {
-            tecla_arriba=false;
+//            tecla_arriba=false;
             if(receiver->IsKeyPressed(SDLK_ESCAPE) || receiver->IsKeyPressed(SDLK_x) || receiver->IsJoyPressed(5,0))
             {
                 sonido->playSound(std::string("Menu.back"));
@@ -120,7 +120,7 @@ void Menu::loopMenu()
 
                 if(((MenuContenedor*)selectables_container)->getElementoSeleccionado()->getTipo()=="Lista")
                 {
-                    MenuLista* ml=((MenuLista*)((MenuContenedor*)selectables_container)->getElementoSeleccionado());
+//                    MenuLista* ml=((MenuLista*)((MenuContenedor*)selectables_container)->getElementoSeleccionado());
 
                     if(!char_select->listoPA())
                     {
@@ -142,7 +142,7 @@ void Menu::loopMenu()
 
                 if(((MenuContenedor*)selectables_container)->getElementoSeleccionado()->getTipo()=="Lista")
                 {
-                    MenuLista* ml=((MenuLista*)((MenuContenedor*)selectables_container)->getElementoSeleccionado());
+//                    MenuLista* ml=((MenuLista*)((MenuContenedor*)selectables_container)->getElementoSeleccionado());
 
                     if(!char_select->listoPA())
                     {
@@ -322,7 +322,7 @@ void Menu::loopMenu()
                 }
             }else
             {
-                tecla_arriba=true;
+//                tecla_arriba=true;
             }
         }
 	}
