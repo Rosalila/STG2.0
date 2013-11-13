@@ -162,7 +162,7 @@ void STG::render()
     for (std::list<Pattern*>::iterator pattern = enemy->getActivePatterns()->begin(); pattern != enemy->getActivePatterns()->end(); pattern++)
     {
         Pattern*p=(Pattern*)*pattern;
-        if(!p->isHit())
+        if(!p->isHit() || p->is_laser )
         {
             for(int i=0;i<(int)p->getBullet()->getHitboxes().size();i++)
             {
