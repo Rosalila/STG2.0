@@ -1381,3 +1381,280 @@
 1384297795 source:/home/jramos/Documentos/ProyectoShooter/STGMenu/STGMenu.cpp
 	"STGMenu.h"
 
+1384298897 source:/home/william/Documents/STG 2.0/Character/Character.cpp
+	"Character.h"
+
+1384298897 /home/william/Documents/STG 2.0/Character/Character.h
+	<map>
+	<list>
+	<vector>
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+	"../Spells/Bullet.h"
+	"../Spells/Pattern.h"
+	"RosalilaUtility/RosalilaUtility.h"
+	"Modifier.h"
+	"RosalilaNetwork/RosalilaNetwork.h"
+
+1384298897 /home/william/Documents/STG 2.0/Spells/Bullet.h
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+	"Hitbox.h"
+
+1384298897 /home/william/Documents/STG 2.0/Spells/Hitbox.h
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+
+1384298897 /home/william/Documents/STG 2.0/Spells/Pattern.h
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+	"Bullet.h"
+	"Hitbox.h"
+	"../Character/Modifier.h"
+	"../STGUtility/STGUtility.h"
+	<cmath>
+
+1384298897 /home/william/Documents/STG 2.0/Character/Modifier.h
+	<iostream>
+
+1384298897 /home/william/Documents/STG 2.0/STGUtility/STGUtility.h
+	<iostream>
+	<fstream>
+	<cmath>
+	<vector>
+	"RosalilaInputs/RosalilaInputs.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Character/Enemy.cpp
+	"Enemy.h"
+
+1384298897 /home/william/Documents/STG 2.0/Character/Enemy.h
+	<map>
+	<list>
+	<vector>
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+	"../Spells/Bullet.h"
+	"../Spells/Pattern.h"
+	"Character.h"
+	"Player.h"
+
+1384298897 /home/william/Documents/STG 2.0/Character/Player.h
+	<map>
+	<list>
+	<vector>
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+	"../Spells/Bullet.h"
+	"../Spells/Pattern.h"
+	"Character.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Character/Modifier.cpp
+	"Modifier.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Character/Player.cpp
+	"Player.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaAI/Automata.cpp
+	"RosalilaAI/Automata.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaAI/Estado.cpp
+	"RosalilaAI/Estado.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaAI/RosalilaAI.cpp
+	"RosalilaAI/RosalilaAI.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaAI/Transicion.cpp
+	"RosalilaAI/Transicion.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaGraphics/Animation.cpp
+	"RosalilaGraphics/Animation.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaGraphics/Cube.cpp
+	"RosalilaGraphics/Cube.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaGraphics/Explosion.cpp
+	"RosalilaGraphics/Explosion.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaGraphics/Image.cpp
+	"RosalilaGraphics/RosalilaGraphics.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaGraphics/Object3D.cpp
+	"RosalilaGraphics/Object3D.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaGraphics/RosalilaGraphics.cpp
+	"RosalilaGraphics/RosalilaGraphics.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaGraphics/Timer.cpp
+	"SDL/SDL.h"
+	"RosalilaGraphics/Timer.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaInputs/Boton.cpp
+	"RosalilaInputs/Boton.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaInputs/Receiver.cpp
+	"RosalilaInputs/RosalilaInputs.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaInputs/RosalilaInputs.cpp
+	"RosalilaInputs/RosalilaInputs.h"
+	<sstream>
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaMenus/Elemento.cpp
+	"RosalilaMenus/Elemento.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaMenus/MenuBarra.cpp
+	"RosalilaMenus/MenuBarra.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaMenus/MenuBoton.cpp
+	"RosalilaMenus/MenuBoton.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaMenus/MenuCharSelect.cpp
+	"RosalilaMenus/MenuCharSelect.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaMenus/MenuContenedor.cpp
+	"RosalilaMenus/MenuContenedor.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaMenus/MenuImagen.cpp
+	"RosalilaMenus/MenuImagen.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaMenus/MenuLista.cpp
+	"RosalilaMenus/MenuLista.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaMenus/MenuTexto.cpp
+	"RosalilaMenus/MenuTexto.h"
+
+1383695921 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaNetwork/RosalilaNetwork.cpp
+	"RosalilaNetwork/RosalilaNetwork.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaSound/RosalilaSound.cpp
+	"RosalilaSound.h"
+
+1383691853 /home/william/Documents/STG 2.0/Rosalila/RosalilaSound/RosalilaSound.h
+	<string>
+	<vector>
+	<iostream>
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	"SDL/SDL_mixer.h"
+	"RosalilaUtility/RosalilaUtility.h"
+	<map>
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/RosalilaUtility/RosalilaUtility.cpp
+	"RosalilaUtility/RosalilaUtility.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/TinyXml/tinystr.cpp
+	"TinyXml/tinystr.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/TinyXml/tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"TinyXml/tinyxml.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/TinyXml/tinyxmlerror.cpp
+	"TinyXml/tinyxml.h"
+
+1383691853 source:/home/william/Documents/STG 2.0/Rosalila/TinyXml/tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"TinyXml/tinyxml.h"
+	<windows.h>
+
+1384298897 source:/home/william/Documents/STG 2.0/STG.cpp
+	"STG.h"
+
+1384298897 /home/william/Documents/STG 2.0/STG.h
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+	"Character/Character.h"
+	"Character/Player.h"
+	"Character/Enemy.h"
+	"Stage/Stage.h"
+	"RosalilaGraphics/Animation.h"
+
+1384298897 /home/william/Documents/STG 2.0/Stage/Stage.h
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"../Character/Character.h"
+	"Layer.h"
+	"Dialogue.h"
+	"../STGUtility/STGUtility.h"
+	<map>
+
+1384298897 /home/william/Documents/STG 2.0/Stage/Layer.h
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+
+1384298897 /home/william/Documents/STG 2.0/Stage/Dialogue.h
+	"TinyXml/tinyxml.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"RosalilaInputs/RosalilaInputs.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/STGMenu/STGMenu.cpp
+	"STGMenu.h"
+
+1384298897 /home/william/Documents/STG 2.0/STGMenu/STGMenu.h
+	"../Stage/Stage.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaMenus/MenuContenedor.h"
+	"RosalilaMenus/MenuCharSelect.h"
+	"RosalilaSound/RosalilaSound.h"
+	"../STG.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/STGUtility/STGUtility.cpp
+	"STGUtility.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Spells/Bullet.cpp
+	"Bullet.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Spells/Hitbox.cpp
+	"Hitbox.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Spells/Pattern.cpp
+	"Pattern.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Stage/Dialogue.cpp
+	"Dialogue.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Stage/Layer.cpp
+	"Layer.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/Stage/Stage.cpp
+	"Stage.h"
+
+1384298897 source:/home/william/Documents/STG 2.0/main.cpp
+	<pthread.h>
+	<stdio.h>
+	<stdlib.h>
+	<sstream>
+	"SDL/SDL.h"
+	"SDL/SDL_image.h"
+	"SDL/SDL_ttf.h"
+	"SDL/SDL_mixer.h"
+	<string>
+	"RosalilaInputs/RosalilaInputs.h"
+	"RosalilaGraphics/RosalilaGraphics.h"
+	"RosalilaSound/RosalilaSound.h"
+	"STGMenu/STGMenu.h"
+	"RosalilaUtility/RosalilaUtility.h"
+	"STGUtility/STGUtility.h"
+	<iostream>
+
