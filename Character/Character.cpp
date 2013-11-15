@@ -328,6 +328,12 @@ void Character::loadPatternsXML()
             if (pattern_node->ToElement()->Attribute("homing"))
                  homing = strcmp(pattern_node->ToElement()->Attribute("homing"), "yes") == 0;
 
+            bool is_laser = false;
+            if (pattern_node->ToElement()->Attribute("is_laser"))
+                 is_laser = strcmp(pattern_node->ToElement()->Attribute("is_laser"), "yes") == 0;
+
+
+
             //Modifiers
             std::map<int, vector<Modifier*>* >*pattern_modifiers=new std::map<int, vector<Modifier*>* >();
 
@@ -455,13 +461,19 @@ void Character::loadPatternsXML()
                         temp_modifiers->push_back(new Modifier("homing",value));
                     }
 
+                     if(pattern_modifier_node->ToElement()->Attribute("is_laser")!=NULL)
+                    {
+                        std::string value=pattern_modifier_node->ToElement()->Attribute("is_laser");
+                        temp_modifiers->push_back(new Modifier("is_laser",value));
+                    }
+
                     (*pattern_modifiers)[at]=temp_modifiers;
                 }
             }
 
             //Pattern ready, now push
             patterns.push_back(new Pattern(sonido,painter,receiver,velocity,max_velocity,acceleration,a_frequency,angle,angle_change,stop_ac_at,ac_frequency,animation_velocity,bullet,offset_x,offset_y,
-                                           startup,cooldown,duration,random_angle,aim_player,freeze, homing,pattern_modifiers,&bullets));
+                                           startup,cooldown,duration,random_angle,aim_player,freeze, homing, is_laser,pattern_modifiers,&bullets));
         }
         type[type_name]=patterns;
     }

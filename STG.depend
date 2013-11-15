@@ -1104,7 +1104,7 @@
 1384035724 source:/home/oscarr/Proyectos/C/STG/Spells/Pattern.cpp
 	"Pattern.h"
 
-1384297582 source:/home/jramos/Documentos/ProyectoShooter/Character/Character.cpp
+1384300920 source:/home/jramos/Documentos/ProyectoShooter/Character/Character.cpp
 	"Character.h"
 
 1384297582 /home/jramos/Documentos/ProyectoShooter/Character/Character.h
@@ -1134,7 +1134,7 @@
 	"RosalilaSound/RosalilaSound.h"
 	"RosalilaInputs/RosalilaInputs.h"
 
-1384297582 /home/jramos/Documentos/ProyectoShooter/Spells/Pattern.h
+1384302161 /home/jramos/Documentos/ProyectoShooter/Spells/Pattern.h
 	"TinyXml/tinyxml.h"
 	"RosalilaGraphics/RosalilaGraphics.h"
 	"RosalilaSound/RosalilaSound.h"
@@ -1295,7 +1295,7 @@
 	"TinyXml/tinyxml.h"
 	<windows.h>
 
-1384297582 source:/home/jramos/Documentos/ProyectoShooter/STG.cpp
+1384302165 source:/home/jramos/Documentos/ProyectoShooter/STG.cpp
 	"STG.h"
 
 1384297582 /home/jramos/Documentos/ProyectoShooter/STG.h
@@ -1340,7 +1340,7 @@
 1384297582 source:/home/jramos/Documentos/ProyectoShooter/Spells/Hitbox.cpp
 	"Hitbox.h"
 
-1384297582 source:/home/jramos/Documentos/ProyectoShooter/Spells/Pattern.cpp
+1384302655 source:/home/jramos/Documentos/ProyectoShooter/Spells/Pattern.cpp
 	"Pattern.h"
 
 1384297582 source:/home/jramos/Documentos/ProyectoShooter/Stage/Dialogue.cpp

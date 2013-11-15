@@ -1,7 +1,7 @@
 #include "Pattern.h"
 
 Pattern::Pattern(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,int velocity,int max_velocity,int acceleration,int a_frequency,float angle,int angle_change,int stop_ac_at,int ac_frequency,int animation_velocity,
-                 Bullet* bullet,int offset_x,int offset_y,int startup,int cooldown,int duration,int random_angle,bool aim_player,bool freeze, bool homing, std::map<int, vector<Modifier*>* >*modifiers,std::map<std::string,Bullet*> *bullets)
+                 Bullet* bullet,int offset_x,int offset_y,int startup,int cooldown,int duration,int random_angle,bool aim_player,bool freeze, bool homing, bool is_laser, std::map<int, vector<Modifier*>* >*modifiers,std::map<std::string,Bullet*> *bullets)
 {
     this->sonido=sonido;
     this->painter=painter;
@@ -30,6 +30,7 @@ Pattern::Pattern(Sound* sonido,RosalilaGraphics* painter,Receiver* receiver,int 
     this->random_angle=random_angle;
     this->aim_player=aim_player;
     this->homing = homing;
+    this->is_laser=is_laser;
 
     //Sprites animation
     this->animation_iteration=0;
@@ -73,6 +74,7 @@ Pattern::Pattern(Pattern*pattern,int x,int y)
     this->aim_player=pattern->aim_player;
     this->freeze=pattern->freeze;
     this->homing = pattern->homing;
+    this->is_laser=pattern->is_laser;
 
     this->iteration=0;
     this->duration=pattern->duration;
@@ -157,7 +159,7 @@ void Pattern::logic(int stage_speed)
     if(animation_iteration>=animation_velocity)
     {
         current_sprite++;
-        if(is_hit)
+        if(is_hit && !is_laser)
         {
             if(current_sprite>=bullet->spritesOnHitSize())
             {
@@ -202,8 +204,8 @@ void Pattern::logic(int stage_speed)
 
 void Pattern::render()
 {
-    Image*image;
-    if(is_hit)
+   Image*image;
+    if(is_hit && !is_laser)
     {
         image=bullet->getOnHitImage(current_sprite);
     }else
@@ -315,9 +317,14 @@ void Pattern::hit()
     bullet->playHitSound();
     is_hit=true;
     current_sprite=0;
-    velocity=0;
-    angle_change=0;
-    acceleration=0;
+    if(!is_laser)
+     {
+        velocity=0;
+        acceleration=0;
+        angle_change=0;
+
+     }
+
 }
 
 bool Pattern::isHit()
@@ -410,11 +417,15 @@ void Pattern::modifiersControl()
             }
             if(modifier->variable=="freeze")
             {
-                this->freeze=modifier->value=="yes";
+                this->freeze=strcmp(modifier->value.c_str(),"yes")==0;
             }
             if(modifier->variable=="homing")
             {
-                this->homing=modifier->value=="yes";
+                this->homing=strcmp(modifier->value.c_str(),"yes")==0;
+            }
+            if(modifier->variable=="is_laser")
+            {
+                this->is_laser=strcmp(modifier->value.c_str(),"yes")==0;
             }
             if(modifier->variable=="velocity")
             {
